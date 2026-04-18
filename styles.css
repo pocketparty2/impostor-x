@@ -1,0 +1,56 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+body {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.word-reveal {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.word-reveal:active {
+  transform: scale(0.9);
+}
+
+.voting-interface {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.result-display {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
